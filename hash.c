@@ -5,6 +5,13 @@
 
 #define TAILLE_TABLE 1024
 
+typedef struct Node {
+    User user;
+    struct Node *next;
+} Node;
+
+static Node *table[TAILLE_TABLE] = {NULL};
+
 unsigned long int hachage(const char *email){
     unsigned long int h = 5381;
 
