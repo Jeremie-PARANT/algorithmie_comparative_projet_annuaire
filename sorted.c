@@ -51,10 +51,13 @@ void sorted_insert(const char *email, int id_numerique)
         capacite = nouvelle;
     }
 
+    // Décaler les éléments pour faire de la place pour le nouvel utilisateur copie des octets d'une zone mémoire vers une autre
     memmove(
         &annuaire[position + 1],
         &annuaire[position],
         (size_t)(taille - position) * sizeof(User));
+
+
     snprintf(annuaire[position].email, EMAIL_MAX, "%s", email);
     annuaire[position].id_numerique = id_numerique;
     taille++;
