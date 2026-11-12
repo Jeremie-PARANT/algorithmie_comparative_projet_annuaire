@@ -30,5 +30,6 @@ Voir étape 4 question 5 pour les différents scénarios de recherche.
 ---
 
 ## Question 2
-Je choisie l'insertion directe qui est plus efficace que l'insertion par tri qui a une complexité de O(n) pour chaque insertion.
-L'insertion directe demande de parcourir le tableau pour trouver la bonne position pour insérer l'élément (recherche dichotomique O(log(n))), puis de décaler les éléments suivants O(n). Tandis que l'insertion par tri demande de trier le tableau après chaque insertion O(n log(n)).
+Je choisie l'insertion directe qui est plus efficace que l'insertion par tri, en effet l'insertion directe à une complexité de O(n) tandis que l'insertion par tri à une complexité de O(n log(n)).
+
+Détails : L'insertion directe demande de parcourir le tableau pour trouver la bonne position pour insérer l'élément (recherche dichotomique O(log(n))), puis de décaler les éléments suivants O(n). Tandis que l'insertion par tri demande de trier le tableau après chaque insertion O(n log(n)).
