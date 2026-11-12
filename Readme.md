@@ -37,24 +37,13 @@ Détails : L'insertion directe demande de parcourir le tableau pour trouver la b
 ---
 
 ## Étape 3 — Mesure des temps de recherche
-
-Le programme [`mesure.c`](./mesure.c) remplit les trois annuaires avec les
-mêmes e-mails, puis mesure la recherche d'un e-mail absent. Cette recherche
-force le pire cas pour la recherche séquentielle et vérifie aussi le coût
-complet de recherche des deux autres approches.
-
-Compilation :
-
-```text
-gcc -std=c11 -Wall -Wextra -Wpedantic mesure.c sequentiel.c hash.c sorted.c -o mesure
-```
-
-Exécution :
-
-```text
+make
 ./mesure
-```
 
-Le résultat est affiché au format CSV avec les colonnes `taille`,
-`sequentielle_s`, `hachage_s` et `dichotomique_s`. Chaque recherche est
-répétée 1 000 fois afin de limiter l'effet de la résolution de `clock()`.
+Exemple de sortie (1000 répétitions) :
+taille,sequentielle_s,hachage_s,dichotomique_s
+100,0.000460000,0.000070000,0.000044000
+1000,0.005620000,0.000059000,0.000064000
+10000,0.050415000,0.000082000,0.000083000
+100000,0.644171000,0.000191000,0.000095000
+1000000,7.032235000,0.001761000,0.000104000
