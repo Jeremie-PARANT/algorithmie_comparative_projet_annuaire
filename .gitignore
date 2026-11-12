@@ -1,0 +1,43 @@
+# Fichiers compiles C
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+
+# Dossiers de compilation
+build/
+bin/
+Debug/
+Release/
+x64/
+x86/
+
+# Resultats et fichiers generes par les mesures
+*.csv
+*.log
+*.tmp
+*.bak
+
+# Fichiers d'IDE et editeurs
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.code-workspace
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Fichiers temporaires systeme
+.DS_Store
+Thumbs.db
+desktop.ini
+
