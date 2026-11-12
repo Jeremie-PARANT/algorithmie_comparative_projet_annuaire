@@ -1,5 +1,4 @@
-## Question 1 
-Grille IOCSF
+## Question 1 - Grille IOCSF
 
 **Input Quelles Données en entrée ?**
 un email -> var char 
@@ -37,7 +36,7 @@ Détails : L'insertion directe demande de parcourir le tableau pour trouver la b
 ---
 
 ## Étape 3 — Mesure des temps de recherche
-make
+make  
 ./mesure
 
 Exemple de sortie (1000 répétitions) :
