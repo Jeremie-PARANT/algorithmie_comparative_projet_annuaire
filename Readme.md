@@ -15,6 +15,11 @@ entrée et le même type de retour pour l'insertion et la recherche, même si le
 change selon l'approche (seq_, hash_, sorted_).  
 
 performances (comparer les algos)
+le compilatuer ne doit pas mettre plus de 5 min pour compiler le projet
+
+Le résulat ne doit pas retourner un faux positif, c'est-à-dire que si l'email n'existe pas dans la base de données, la fonction de recherche doit retourner false.
+
+le compilateur doit pouvoir analyser un annuaire vide
 
 **Le volume**
 Les algorithmes seront testés avec les volumes suivants : 100, 1 000, 10 000, 100 000, 1 000 000 utilisateurs
