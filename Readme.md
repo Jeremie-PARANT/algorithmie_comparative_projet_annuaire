@@ -33,3 +33,28 @@ Voir étape 4 question 5 pour les différents scénarios de recherche.
 Je choisie l'insertion directe qui est plus efficace que l'insertion par tri, en effet l'insertion directe à une complexité de O(n) tandis que l'insertion par tri à une complexité de O(n log(n)).
 
 Détails : L'insertion directe demande de parcourir le tableau pour trouver la bonne position pour insérer l'élément (recherche dichotomique O(log(n))), puis de décaler les éléments suivants O(n). Tandis que l'insertion par tri demande de trier le tableau après chaque insertion O(n log(n)).
+
+---
+
+## Étape 3 — Mesure des temps de recherche
+
+Le programme [`mesure.c`](./mesure.c) remplit les trois annuaires avec les
+mêmes e-mails, puis mesure la recherche d'un e-mail absent. Cette recherche
+force le pire cas pour la recherche séquentielle et vérifie aussi le coût
+complet de recherche des deux autres approches.
+
+Compilation :
+
+```text
+gcc -std=c11 -Wall -Wextra -Wpedantic mesure.c sequentiel.c hash.c sorted.c -o mesure
+```
+
+Exécution :
+
+```text
+./mesure
+```
+
+Le résultat est affiché au format CSV avec les colonnes `taille`,
+`sequentielle_s`, `hachage_s` et `dichotomique_s`. Chaque recherche est
+répétée 1 000 fois afin de limiter l'effet de la résolution de `clock()`.
